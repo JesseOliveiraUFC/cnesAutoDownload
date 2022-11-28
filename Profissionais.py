@@ -130,17 +130,5 @@ def Connect():
             cur.close()
             conn.close()
             print("PostgreSQL connection is closed")
-            
-def Connect2():
-    print("Conectando ao Banco de Dados PostgreSQL...")
-    
-    conn = psycopg2.connect(
-        host = '54.232.0.124',
-        database = 'dw',
-        user = 'dwuser',
-        port = '32466',
-        password = '2QmpbKsQCsnpUP2T'
-        )
-    return conn
-
+          
 Connect()            
